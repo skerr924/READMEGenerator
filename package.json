@@ -1,15 +1,23 @@
 {
-    "name": "mini-project",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "inquirer": "^6.3.1"
-    }
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "commandline application that dynamically generates readme file from user prompt responses ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skerr924/READMEGenerator.git"
+  },
+  "keywords": [
+    "commandline",
+    "readme"
+  ],
+  "author": "Sarah Kerr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skerr924/READMEGenerator/issues"
+  },
+  "homepage": "https://github.com/skerr924/READMEGenerator#readme"
 }
-  
