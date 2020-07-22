@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/skerr924/READMEGenerator/issues"
   },
-  "homepage": "https://github.com/skerr924/READMEGenerator#readme"
+  "homepage": "https://github.com/skerr924/READMEGenerator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.2"
+  }
 }

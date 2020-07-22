@@ -8,33 +8,53 @@ function promptUser() {
   return inquirer.prompt([
     {
       type: "input",
-      name: "name",
-      message: "What is your name?"
+      name: "projectTitle",
+      message: "What is the title of this project or application?"
     },
     {
       type: "input",
-      name: "location",
-      message: "Where are you from?"
+      name: "description",
+      message: "Provide a description of the project:"
     },
     {
       type: "input",
-      name: "hobby",
-      message: "What is your favorite hobby?"
+      name: "installation",
+      message: "Provide any pertinent facts about installation: "
     },
     {
       type: "input",
-      name: "food",
-      message: "What is your favorite food?"
+      name: "usage",
+      message: "Provide any pertinent facts about usage:"
     },
     {
       type: "input",
-      name: "github",
-      message: "Enter your GitHub Username"
+      name: "license",
+      message: "What liceense(s) is/are required?"
     },
     {
       type: "input",
-      name: "linkedin",
-      message: "Enter your LinkedIn URL."
+      name: "contributing",
+      message: "Provide any pertinent information on contributing to the project:"
+    },
+    {
+        type: "input",
+        name: "tests",
+        message: "Provide any pertinent information about testing:"
+    },
+    {
+        type: "input",
+        name: "questions",
+        message: "Are there any frequently asked questions you'd like to share?"
+    }, 
+    {
+        type: "input", 
+        name: "username",
+        message: "What is your GitHub username?"
+    }, 
+    { 
+        type: "input", 
+        name: "yourName", 
+        message: "What is your name?"
     }
   ]);
 }
