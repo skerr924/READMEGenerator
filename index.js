@@ -4,6 +4,7 @@ const util = require("util");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
+//all license selection options listed here as objects 
 const licenses = [
     {name: "Apache 2.0",
     ref: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
@@ -11,28 +12,52 @@ const licenses = [
     {name: "Boost", 
     ref: "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)"
     }, 
-    {name: "Apache 2.0",
-    ref: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    {name: "BSD 3-Clause License",
+    ref: "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
     },
-    {name: "Apache 2.0",
-    ref: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    {name: "Eclipse Public License 1.0",
+    ref: "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"
     },
-    {name: "Apache 2.0",
-    ref: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    {name: "GNU GPL v3",
+    ref: "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
     },
-    {name: "Apache 2.0",
-    ref: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    {name: "GNU GPL v2",
+    ref: "[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
     },
-    {name: "Apache 2.0",
-    ref: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    {name: "ISC",
+    ref: "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)"
     },
-    {name: "Apache 2.0",
-    ref: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    {name: "MIT",
+    ref: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    },
+    {name: "Mozilla Public License 2.0",
+    ref: "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"
+    },
+    {name: "Attribution License (BY)",
+    ref: "[![License: Open Data Commons Attribution](https://img.shields.io/badge/License-ODC_BY-brightgreen.svg)](https://opendatacommons.org/licenses/by/)"
+    },
+    {name: "Open Database License (ODbL)",
+    ref: "[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)"
+    },
+    {name: "The Perl License",
+    ref: "[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)"
+    },
+    {name: "SIL Open Font License 1.1",
+    ref: "[![License: Open Font-1.1](https://img.shields.io/badge/License-OFL%201.1-lightgreen.svg)](https://opensource.org/licenses/OFL-1.1)"
+    },
+    {name: "The Unlicense",
+    ref: "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
+    },
+    {name: "WTFPL",
+    ref: "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)"
+    },
+    {name: "Zlib",
+    ref: "[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)"
     },
 
 ]
     
-
+//prompts user in the commandline 
 function promptUser() {
   return inquirer.prompt([
     {
@@ -119,7 +144,7 @@ function generateREADME(answers) {
 
   <a name="lic"></a>
   # License 
-  ${answers.license}
+  ${answers.license.ref}
   
   <a name="contr"></a>
   # Contributing 
