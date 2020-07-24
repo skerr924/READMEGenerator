@@ -16,13 +16,13 @@ Prompts request information including:
   * Questions
 
 # Table of Contents 
-[Description](#desc)
-[Installation](#install)
-[Usage](#usage)
-[License](#lic)
-[Contributing](#contr)
-[Tests](#test)
-[Questions](#quest)
+1. [Description](#desc)
+2. [Installation](#install)
+3. [Usage](#usage)
+4. [License](#lic)
+5. [Contributing](#contr)
+6. [Tests](#test)
+7. [Questions](#quest)
 
 <a name="install"></a>
 # Installation 
