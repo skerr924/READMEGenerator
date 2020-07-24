@@ -59,30 +59,40 @@ function promptUser() {
   ]);
 }
 
-function generateHTML(answers) {
+function generateREADME(answers) {
   return `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Hi! My name is ${answers.name}</h1>
-    <p class="lead">I am from ${answers.location}.</p>
-    <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-    <ul class="list-group">
-      <li class="list-group-item">My GitHub username is ${answers.github}</li>
-      <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
-    </ul>
-  </div>
-</div>
-</body>
-</html>`;
+  # Title 
+
+  <a name="desc"></a>
+  # Description 
+  
+  # Table of Contents 
+  [Description](#desc)
+  [Installation](#install)
+  [Usage](#usage)
+  [License](#lic)
+  [Contributing](#contr)
+  [Tests](#test)
+  [Questions](#quest)
+  
+  <a name="install"></a>
+  # Installation 
+  
+  <a name="usage"></a>
+  # Usage 
+  
+  <a name="lic"></a>
+  # License 
+  
+  <a name="contr"></a>
+  # Contributing 
+  
+  <a name="test"></a>
+  # Tests 
+  
+  <a name="quest"></a>
+  # Questions 
+  `;
 }
 
 async function init() {
@@ -90,11 +100,11 @@ async function init() {
   try {
     const answers = await promptUser();
 
-    const html = generateHTML(answers);
+    const md = generateREADME(answers);
 
-    await writeFileAsync("index.html", html);
+    await writeFileAsync("README2.md", md);
 
-    console.log("Successfully wrote to index.html");
+    console.log("Successfully wrote to README2.md");
   } catch(err) {
     console.log(err);
   }

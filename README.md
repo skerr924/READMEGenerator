@@ -1,5 +1,7 @@
-# READMEGenerator
+# 
 
+<a name="desc"></a>
+# Description 
 This command-line application generates a professional and comprehensive README.md file from the user's inputs and responses to command-line prompts when deployed through node. 
 
 Prompts request information including: 
@@ -13,16 +15,14 @@ Prompts request information including:
   * Tests
   * Questions
 
-# Title 
-# Description 
 # Table of Contents 
-
-Installation
+[Description](#desc)
+[Installation](#install)
 [Usage](#usage)
-License (#lic)
-Contributing (#contr)
-Tests (#test)
-Questions (#quest)
+[License](#lic)
+[Contributing](#contr)
+[Tests](#test)
+[Questions](#quest)
 
 <a name="install"></a>
 # Installation 
