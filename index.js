@@ -38,7 +38,7 @@ function promptUser() {
     },
     {
         type: "input",
-        name: "tests",
+        name: "test",
         message: "Provide any pertinent information about testing:"
     },
     {
@@ -61,10 +61,12 @@ function promptUser() {
 
 function generateREADME(answers) {
   return `
-  # Title 
+  # ${answers.projectTitle}
 
   <a name="desc"></a>
-  # Description 
+  # Description
+  ${answers.description}
+
   
   # Table of Contents 
   1. [Description](#desc)
@@ -77,21 +79,28 @@ function generateREADME(answers) {
   
   <a name="install"></a>
   # Installation 
+  ${answers.installation}
   
   <a name="usage"></a>
   # Usage 
-  
+  ${answers.usage}
+
   <a name="lic"></a>
   # License 
+  ${answers.license}
   
   <a name="contr"></a>
   # Contributing 
+  ${answers.contributing}
   
   <a name="test"></a>
   # Tests 
-  
+  ${answers.test}
+
   <a name="quest"></a>
   # Questions 
+  ${answers.questions}
+
   `;
 }
 
