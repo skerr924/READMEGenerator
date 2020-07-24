@@ -4,6 +4,15 @@ const util = require("util");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
+const licenses = [
+    {name: "Apache 2.0",
+    ref: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    }, 
+    {name: "Boost", 
+    ref: "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)"}
+]
+    
+
 function promptUser() {
   return inquirer.prompt([
     {
@@ -27,10 +36,10 @@ function promptUser() {
       message: "Provide any pertinent facts about usage:"
     },
     {
-      type: "rawlist",
+      type: "checkbox",
       name: "license",
       message: "What license(s) is/are required?", 
-      choices: ["Apache", "Boost", "BSD"]
+      choices: licenses
     },
     {
       type: "input",

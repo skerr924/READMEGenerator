@@ -1,6 +1,6 @@
 
-  # ad
-  Creator: adf
+  # adf
+  Creator: 
   GitHub: https://github.com/adf
 
   <a name="desc"></a>
@@ -23,15 +23,15 @@
   
   <a name="usage"></a>
   # Usage 
-  asd
+  adf
 
   <a name="lic"></a>
   # License 
-  ad
+  Apache
   
   <a name="contr"></a>
   # Contributing 
-  This app was originally created by adf, who can be found at https://github.com/adf.
+  This app was originally created by , who can be found at https://github.com/adf.
   adfa
   
   <a name="test"></a>
@@ -40,6 +40,6 @@
 
   <a name="quest"></a>
   # Questions 
-  adf
+  ad
 
   
