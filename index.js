@@ -27,9 +27,10 @@ function promptUser() {
       message: "Provide any pertinent facts about usage:"
     },
     {
-      type: "input",
+      type: "rawlist",
       name: "license",
-      message: "What liceense(s) is/are required?"
+      message: "What license(s) is/are required?", 
+      choices: ["Apache", "Boost", "BSD"]
     },
     {
       type: "input",
@@ -62,6 +63,8 @@ function promptUser() {
 function generateREADME(answers) {
   return `
   # ${answers.projectTitle}
+  Creator: ${answers.yourName}
+  GitHub: https://github.com/${answers.username}
 
   <a name="desc"></a>
   # Description
@@ -91,6 +94,7 @@ function generateREADME(answers) {
   
   <a name="contr"></a>
   # Contributing 
+  This app was originally created by ${answers.yourName}, who can be found at https://github.com/${answers.username}.
   ${answers.contributing}
   
   <a name="test"></a>
