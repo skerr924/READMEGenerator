@@ -17,8 +17,8 @@ Prompts request information including:
 # Description 
 # Table of Contents 
 
-<a ref ="install">Installation</a><br>
-Usage (#usage)
+Installation
+[Usage](#usage)
 License (#lic)
 Contributing (#contr)
 Tests (#test)
