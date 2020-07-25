@@ -97,11 +97,6 @@ function promptUser() {
         message: "Provide any pertinent information about testing:"
     },
     {
-        type: "input",
-        name: "questions",
-        message: "Are there any frequently asked questions you'd like to share?"
-    }, 
-    {
         type: "input", 
         name: "username",
         message: "What is your GitHub username?"
@@ -110,6 +105,11 @@ function promptUser() {
         type: "input", 
         name: "yourName", 
         message: "What is your name?"
+    }, 
+    {
+        type: "input", 
+        name: "email", 
+        message: "What is your email address?"
     }
   ]);
 }
@@ -148,8 +148,7 @@ function generateREADME(answers) {
   ${answers.license}
   
   <a name="contr"></a>
-  # Contributing 
-  This app was originally created by ${answers.yourName}, who can be found at https://github.com/${answers.username}.
+  # Contributing   
   ${answers.contributing}
   
   <a name="test"></a>
@@ -158,7 +157,7 @@ function generateREADME(answers) {
 
   <a name="quest"></a>
   # Questions 
-  ${answers.questions}
+  Please direct all quesitons to me, ${answers.yourName}. I can be found at ${answers.email} or at https://github.com/${answers.username}.
 
   `;
 }
