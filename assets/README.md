@@ -33,6 +33,7 @@ Run an npm i and an npm install to ensure all required modules are installed bef
 This is a command-line application intended for interaction within the terminal. By running the command "npm node", the application prompts users with a series of questions, their answers to which will become the content of a well-structured README file for whatever project they are working on. 
 
 <a href = "/assets/ExampleReadMe.md"> Sample generated README file.</a>
+
 Sample terminal prompts and responses: <img src = "/assets/PromptMockAnswers.png" >
 
 <a name="lic"></a>
