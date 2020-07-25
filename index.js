@@ -114,6 +114,7 @@ function promptUser() {
   ]);
 }
 
+//function which generates the readme file using a template literal
 function generateREADME(answers) {
   return `
   # ${answers.projectTitle}
@@ -162,6 +163,7 @@ function generateREADME(answers) {
   `;
 }
 
+//initial called function, begins prompting the user with the promptUser function above 
 async function init() {
   console.log("hi")
   try {
@@ -177,12 +179,5 @@ async function init() {
     console.log(err);
   }
 }
-
-// function getLicInfo(licenseList){ 
-//     licenses.forEach(function(){
-
-//     })
-
-// }
 
 init();
