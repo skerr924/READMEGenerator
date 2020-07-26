@@ -26,7 +26,7 @@ Prompts request information including:
 
 <a name="install"></a>
 # Installation 
-Run an npm i and an npm install to ensure all required modules are installed before usage. 
+Run an npm install to ensure all required modules are installed before usage. 
 
 <a name="usage"></a>
 # Usage 
