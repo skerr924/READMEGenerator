@@ -21,8 +21,7 @@ Prompts request information including:
 3. [Usage](#usage)
 4. [License](#lic)
 5. [Contributing](#contr)
-6. [Tests](#test)
-7. [Questions](#quest)
+6. [Questions](#quest)
 
 <a name="install"></a>
 # Installation 
